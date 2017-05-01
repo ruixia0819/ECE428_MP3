@@ -1,0 +1,18 @@
+#!/bin/bash
+FILE1="mp3_final.py"
+FILE2="client_interface.py"
+#FILE3="mp2_eval.py"
+#BATCH="infile.txt"
+#BATCH="*.txt"
+echo "Broadcast to all VMs"
+
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-01.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-02.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-03.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-04.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-05.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-06.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-07.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-08.cs.illinois.edu:~/
+scp $FILE1 $FILE2 $FILE3 $BATCH li238@sp17-cs425-g07-09.cs.illinois.edu:~/
+cp  $FILE1 $FILE2 $FILE3 $BATCH ~/
